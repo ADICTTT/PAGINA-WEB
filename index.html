@@ -42,9 +42,9 @@
                 <h1>ADRIANA CHOQUECALLATA TRONCOSO</h1>
                 <h2>Ingeniera informática - Ilustradora</h2>
                 <div class="redes">
-                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="#"><i class="fa-solid fa-envelopes-bulk"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/adi.ct_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="mailto:ADICT_INFORMACION@gmail.com"><i class="fa-solid fa-envelopes-bulk"></i></a>
+                    <a href="https://adicttt.blogspot.com/"><i class="fa-brands fa-blogger"></i></a>
                 </div>
             </div>
         </section>
@@ -66,7 +66,7 @@
                         </li>
                         <li>
                             <strong>Email: </strong>
-                            choquecallatadriana@gmail.com
+                            ADICT_INFORMACION@gmail.com
                         </li>
                         <li>
                             <strong>Ciudad - Pais: </strong>
@@ -109,10 +109,12 @@
                     </div>
                 </div>   
             </div>
+            <a href="CV.pdf" download="Adriana_Choquecallata_Troncoso_CV.pdf">
             <button>
                 Descargar CV <i class = "fa-solid fa-download"></i>
                 <span class = "overlay"></span>
             </button>
+            </a>
         
         </div>
     </section>
@@ -437,6 +439,7 @@
             <h2>CONTACTO</h2>
             <div class="fila">
                 <div class="col">
+                    <!--mientras soluciono lo de php-->
                     <input type="text" placeholder="Tú Nombre">
                     <input type="text" placeholder="Número Telefónico">
                     <input type="text" placeholder="Dirección de correo">
@@ -454,7 +457,7 @@
                         <ul>
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
-                                Email: choquecallatadriana@gmail.com
+                                Email: ADICT_INFORMACION@gmail.com
                             </li>
                         </ul>
                     </div>
@@ -469,52 +472,52 @@
             <i class = "fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="#"><i class="fa-solid fa-envelopes-bulk"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href=https://www.instagram.com/adi.ct_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="mailto:ADICT_INFORMACION@gmail.com"><i class="fa-solid fa-envelopes-bulk"></i></a>
         </div>
     </footer>
+    
+    <!--script-->
     <script>
-        let menuVisible = false;
+            let menuVisible = false;
+            function mostrarOcultarMenu(){
+                if(menuVisible){
+                    document.getElementById("nav").classList = "";
+                    menuVisible = false;
+                }
+                else{
+                    document.getElementById("nav").classList = "responsive";
+                    menuVisible = true;
 
-function mostrarOcultarMenu(){
-    if(menuVisible){
-        document.getElementById("nav").classList = "";
-        menuVisible = false;
-    }
-    else{
-        document.getElementById("nav").classList = "responsive";
-        menuVisible = true;
+                }
+            }
 
-    }
-}
+            function seleccionar(){
+                document.getElementById("nav").classList = "";
+                menuVisible = false;
+            }
 
-function seleccionar(){
-    document.getElementById("nav").classList = "";
-    menuVisible = false;
-}
+            function efectoHabilidades(){
+                var skills = document.getElementById("skills");
+                var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
+                if(distancia_skills>=300){
+                    let efectoHabilidades = document.getElementsByClassName("progreso");
+                    efectoHabilidades[0].classList.add("ibispaintx");
+                    efectoHabilidades[1].classList.add("java");
+                    efectoHabilidades[2].classList.add("javascript");
+                    efectoHabilidades[3].classList.add("htmlcss");
+                    efectoHabilidades[4].classList.add("sql");
+                    efectoHabilidades[5].classList.add("oratoria");
+                    efectoHabilidades[6].classList.add("creatividad");
+                    efectoHabilidades[7].classList.add("proyectmanagement");
+                    efectoHabilidades[8].classList.add("comunicacion");
+                    efectoHabilidades[9].classList.add("trabajoenequipo");
+                }
+            }
 
-function efectoHabilidades(){
-    var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distancia_skills>=300){
-        let efectoHabilidades = document.getElementsByClassName("progreso");
-        efectoHabilidades[0].classList.add("ibispaintx");
-        efectoHabilidades[1].classList.add("java");
-        efectoHabilidades[2].classList.add("javascript");
-        efectoHabilidades[3].classList.add("htmlcss");
-        efectoHabilidades[4].classList.add("sql");
-        efectoHabilidades[5].classList.add("oratoria");
-        efectoHabilidades[6].classList.add("creatividad");
-        efectoHabilidades[7].classList.add("proyectmanagement");
-        efectoHabilidades[8].classList.add("comunicacion");
-        efectoHabilidades[9].classList.add("trabajoenequipo");
-    }
-}
-
-window.onscroll = function(){
-    efectoHabilidades();
-}
+            window.onscroll = function(){
+                efectoHabilidades();
+            }
     </script>
     </body>
 </html>
