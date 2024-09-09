@@ -17,15 +17,15 @@
                 </div>
                 <nav id="nav">
                     <ul>
-                        <li><a href="#inicio">INICIO</a></li>
-                        <li><a href="#sobremi">SOBRE MI</a></li>
-                        <li><a href="#skills">SKILLS</a></li>
-                        <li><a href="#curriculum">CURRICULUM</a></li>
-                        <li><a href="#portfolio">PORTFOLIO</a></li>
-                        <li><a href="#contacto">CONTACTO</a></li>
+                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                        <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar()"> PORTFOLIO</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                     </ul>
                 </nav>
-                <div class="nav-responsive">
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             
@@ -226,7 +226,7 @@
     </section>
 
     <!--SECCION CURRICULUM-->
-    <seccion class= "curriculum" id="curriculum">
+    <section class= "curriculum" id="curriculum">
         <div class="contenido-seccion">
             <h2>Curriculum</h2>
             <div class="fila">
@@ -240,7 +240,8 @@
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
-
+                    </div>  
+                    <div class="item izq">  
                         <h4>Comportamiento de un malware aplicando técnicas de mitigación y prevención.</h4>
                         <span class = "casa">Escuela de Negocios ESAM</span>
                         <span class="fecha">07/2024</span>
@@ -248,7 +249,8 @@
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
-
+                    </div>  
+                    <div class="item izq">
                         <h4>Programacion con JavaScript: JSE & React</h4>
                         <span class = "casa">Cisco-EVOLUTECH</span>
                         <span class="fecha">01/2024 - 05/2024</span>
@@ -256,7 +258,8 @@
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
-
+                    </div>
+                    <div class="item izq">
                         <h4>Programacion con JavaScript</h4>
                         <span class = "casa">Cisco-EVOLUTECH</span>
                         <span class="fecha">01/2024 - 05/2024</span>
@@ -264,7 +267,8 @@
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
-
+                    </div>
+                    <div class="item izq">
                         <h4>Técnico Medio - Sistemas Informáticos y Robótica</h4>
                         <span class = "casa">Donato Vásquez Secundario</span>
                         <span class="fecha">02/2021 - 12/2022</span>
@@ -285,7 +289,8 @@
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
-
+                    </div>
+                    <div class="item der">
                         <h4>Freelace</h4>
                         <span class = "casa">Comisiones</span>
                         <p>Comisiones de ilustraciones personalizadas, invitaciones, folletos y logotipos.</p>
@@ -296,7 +301,220 @@
                 </div>
             </div>
         </div>
-    </seccion>
+    </section>
 
+    <!--SECCION PORTFOLIO-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="Imagenes/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Grafico</h3>
+                        <p>Logotipo</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="Imagenes/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Grafico</h3>
+                        <p>Logotipo</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="Imagenes/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Grafico</h3>
+                        <p>Logotipo</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="Imagenes/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Grafico</h3>
+                        <p>Logotipo</p>
+                    </div>
+                </div>
+
+                <!--INVITACIONES-->
+                <div class="proyecto">
+                    <img src="Imagenes/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Grafico</h3>
+                        <p>Invitación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imagenes/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Grafico</h3>
+                        <p>Invitación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imagenes/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Grafico</h3>
+                        <p>Invitación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imagenes/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Grafico</h3>
+                        <p>Invitación</p>
+                    </div>
+                </div>
+                <!--folletos-->
+                <div class="proyecto">
+                    <img src="Imagenes/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Grafico</h3>
+                        <p>Folleto</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imagenes/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Grafico</h3>
+                        <p>Folleto</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imagenes/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Grafico</h3>
+                        <p>Folleto</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imagenes/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Grafico</h3>
+                        <p>Folleto</p>
+                    </div>
+                </div>
+                <!--ilustraciones-->
+                <div class="proyecto">
+                    <img src="Imagenes/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Grafico</h3>
+                        <p>Ilustración</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imagenes/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Grafico</h3>
+                        <p>Ilustración</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imagenes/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Grafico</h3>
+                        <p>Ilustración</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imagenes/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Grafico</h3>
+                        <p>Ilustración</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número Telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="" placeholer="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-message fa-solid fa-paper-plane"></i>
+                        <span class = "overlay"></span>
+                    </button>
+                </div>
+                <!--Mapa-->
+                <div class="col">
+                    <img src="Imagenes/rin.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: choquecallatadriana@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <a href="#inicio" class = "arriba">
+            <i class = "fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-solid fa-envelopes-bulk"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script>
+        let menuVisible = false;
+
+function mostrarOcultarMenu(){
+    if(menuVisible){
+        document.getElementById("nav").classList = "";
+        menuVisible = false;
+    }
+    else{
+        document.getElementById("nav").classList = "responsive";
+        menuVisible = true;
+
+    }
+}
+
+function seleccionar(){
+    document.getElementById("nav").classList = "";
+    menuVisible = false;
+}
+
+function efectoHabilidades(){
+    var skills = document.getElementById("skills");
+    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
+    if(distancia_skills>=300){
+        let efectoHabilidades = document.getElementsByClassName("progreso");
+        efectoHabilidades[0].classList.add("ibispaintx");
+        efectoHabilidades[1].classList.add("java");
+        efectoHabilidades[2].classList.add("javascript");
+        efectoHabilidades[3].classList.add("htmlcss");
+        efectoHabilidades[4].classList.add("sql");
+        efectoHabilidades[5].classList.add("oratoria");
+        efectoHabilidades[6].classList.add("creatividad");
+        efectoHabilidades[7].classList.add("proyectmanagement");
+        efectoHabilidades[8].classList.add("comunicacion");
+        efectoHabilidades[9].classList.add("trabajoenequipo");
+    }
+}
+
+window.onscroll = function(){
+    efectoHabilidades();
+}
+    </script>
     </body>
 </html>
