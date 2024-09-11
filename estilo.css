@@ -527,10 +527,10 @@ html{
     display: inline-block;
     text-decoration: none;
     border: 1px solid #e89696;
-    border-radius: 100%; /* Hace que el contenedor sea redondo */
+    border-radius: 100%;
     width: 42px;
     height: 42px;
-    line-height: 42px; /* Alinea verticalmente el ícono */
+    line-height: 42px; 
     margin: 40px 5px;
     font-size: 20px;
     transition: .3s;
@@ -730,5 +730,16 @@ footer .redes a:hover{
     .contacto .fila .col{
         width: 100%;
     }
-    
 }
+@media screen and (max-width: 700px) {
+    .proyecto a {
+        width: 30px;  /* Ajusta el tamaño del ícono */
+        height: 30px;
+        font-size: 16px; /* Reduce el tamaño del ícono */
+        line-height: 30px;
+    }
+    .proyecto p {
+        text-align: center; /* Centra el texto y el ícono */
+    }
+}
+
