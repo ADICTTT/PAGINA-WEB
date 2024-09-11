@@ -464,7 +464,24 @@ html{
     position: relative;
     bottom: 4px;
 }
-/*SECCION PORTFOLIO*/
+/*SECCION PORTFOLIO PROGRAMADOR*/
+.portfolioa{
+    background-color: #241a4f;
+    color: #ebe7bc;
+    padding: 50px 20px;
+}
+.portfolioa .contenido-seccion{
+    max-width: 1100px;
+    margin:auto;
+}
+.portfolioa h2{
+    font-size: 40px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*SECCION PORTFOLIO ARTISTA*/
 .portfolio{
     background-color: #241a4f;
     color: #ebe7bc;
