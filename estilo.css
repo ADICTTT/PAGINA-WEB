@@ -733,13 +733,13 @@ footer .redes a:hover{
 }
 @media screen and (max-width: 700px) {
     .proyecto a {
-        width: 30px;  /* Ajusta el tamaño del ícono */
+        width: 30px;  
         height: 30px;
-        font-size: 16px; /* Reduce el tamaño del ícono */
+        font-size: 16px; 
         line-height: 30px;
     }
     .proyecto p {
-        text-align: center; /* Centra el texto y el ícono */
+        text-align: center;
     }
 }
 
