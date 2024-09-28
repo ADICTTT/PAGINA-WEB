@@ -38,7 +38,7 @@ html{
 .contenedor-header header nav ul li a{
     text-align: none;
     color: #ebe7bc;
-    margin: 0 15px;
+    margin: 0 15px; /**************/
     padding: 3px;
     transition: .5s;
     text-decoration: none;
