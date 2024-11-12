@@ -267,6 +267,129 @@ html{
     right: -15px;
     font-size: 14px;
 }
+
+
+/*carrusel de imagenes*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.carrusel {
+    position: relative;
+    width: 80%; 
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.carrusel h2 {
+    margin-bottom: 10px;
+}
+
+.carrusel .imagenes {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.carrusel .grupo {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    width: 100%; 
+}
+
+.carrusel img {
+    width: 23%; 
+    height: auto;
+    object-fit: contain; 
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.carrusel img:hover {
+    transform: scale(1.2); 
+    z-index: 10; 
+    box-shadow: 0 4px 10px rgba(13, 24, 58, 0.868); 
+}
+
+button {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 0, 93, 0.5);
+    color: rgb(255, 187, 187);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 2px 15px;
+    border-radius: 100px;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.1s ease; 
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.carrusel:hover button {
+    opacity: 1;
+}
+
+.imagenes img {
+    transition: transform 0.5s ease;
+}
+
+button:hover {
+    background-color: rgba(36, 36, 250, 0.7);
+}
+/*parte de portfolio de porgramador*/
+.overlay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.github-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.github-link:hover {
+    color: rgb(255, 176, 218);
+    background-color: #ff1a85;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.right-image {
+    max-width: 50%; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+
 /*dinamicamente por javascript*/
 .skills .skill .javascript{
     width: 0%;
@@ -544,89 +667,15 @@ html{
 }
 
 /*SECCION CONTACTO*/
-.contacto{
-    background-image: url(Imagenes/FONDO2.jpg);
-    background-color: #1c1342;
-    color: #ebe7bc;
-    padding: 50px 0;
-}
-.contacto .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-}
-.contacto h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-}
-.contacto .fila{
-    display: flex;
-}
-.contacto .col{
-    width: 50%;
-    padding: relative;
-    position: relative;
-}
-.contacto .col input, .contacto .col textarea{
-    display: block;
-    width: 100%;
-    padding: 18px;
-    border: none;
-    margin-bottom: 20px;
-    background-color: #1c1342;
-    color: #ebe7bc;
-    font-size: 18px;
-}
-.contacto button{
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #ebe7bc;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
-    color: #ebe7bc;
-    position: relative;
-    z-index: 10;
-}
-.contacto button .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #db007c;
-    z-index: -1;
-    transition: 1s;
-}
-.contacto button:hover .overlay{
-    width: 100%;
-}
-.contacto .col img{
-    width: 100%;
-}
-.contacto .col .info{
-    position: absolute;
-    top: 95%;
-    background-color: #1c1342;
-    padding: 20px;
-    max-width: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.contacto .col .info ul{
-    list-style: none;
-}
-.contacto .col .info ul li{
-    margin-bottom: 20px;
-}
-.contacto .col .info ul li i{
-    color: #db007c;
-    display: inline-block;
-    margin-right: 20px;
-}
+
+
+
+
+
+
+
+
+/*footer*/
 footer{
     background-color: #1c1342;
     color: #ebe7bc;
@@ -742,4 +791,3 @@ footer .redes a:hover{
         text-align: center;
     }
 }
-
