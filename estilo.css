@@ -353,11 +353,41 @@ button:hover {
     background-color: rgba(36, 36, 250, 0.7);
 }
 /*parte de portfolio de porgramador*/
-.overlay {
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.content-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+
+.text-section {
+    flex: 1;
+    text-align: left;
+}
+
+.text-section h3 {
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    margin: 0;
 }
 
 .github-link {
@@ -365,8 +395,11 @@ button:hover {
     font-size: 18px;
     color: #333;
     background-color: #f0f0f0;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     transition: all 0.3s ease;
     margin-top: 10px;
 }
@@ -376,19 +409,53 @@ button:hover {
     background-color: #ff1a85;
 }
 
-.image-container {
+.github-link i {
+    font-size: 20px;
+}
+
+/* Carrusel (imágenes deslizándose a la derecha) */
+.carousel-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    max-width: 40%; /* Ajuste para que ocupe menos espacio */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: right;
+}
+
+.carousel {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    animation: slide 15s infinite;
 }
 
-.right-image {
-    max-width: 50%; 
+.carousel-item {
+    min-width: 100%;
+    text-align: center;
+}
+
+.carousel img {
+    width: 100%;
     height: auto;
-    border-radius: 10px; 
+    border-radius: 10px;
+    display: inline-block;
 }
 
+/* Animación del carrusel */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+
+/* Parte de portfolio de programador */
 
 /*dinamicamente por javascript*/
 .skills .skill .javascript{
